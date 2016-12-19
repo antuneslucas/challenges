@@ -1,0 +1,6 @@
+.project
+.classpath
+.settings
+target/
+goeuro_busroute.log
+tests/
