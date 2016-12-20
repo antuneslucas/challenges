@@ -1,5 +1,26 @@
 # Bus Route Challenge
 
+### Solution
+This solution uses Spring Boot 1.4.2, Java 8, Logback and Maven.
+
+Assumptions:
+
+- Both station ids are required, otherwise the response will be a (HTTP) 400 Bad Request.
+- There is no direct bus route between two stations with the same id.
+
+Example:
+- Request:
+
+http://localhost:8088/api/direct?dep_sid=**10**&arr_sid=**10**
+
+- Response:
+```
+{
+    "dep_sid": 10,
+    "arr_sid": 10,
+    "direct_bus_route": false
+}
+```
 ### Problem
 
 We are adding a new bus provider to our system. In order to implement a very
